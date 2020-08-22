@@ -69,7 +69,7 @@ public class Solution {
 		if(x == length-1 && y == length-1 && path[x][y] == 1)
 			return true;
 		
-		//		if none of the above, that means we are sitting somewhere in the mase and we can go to 2 different directions... return if 
+		//		if none of the above, that means we are sitting somewhere in the maze and we can go to 2 different directions... return if 
 		//		any of those 2 paths result in a 
 		//		solution..
 		return helper2(path,x+1,y,length) || helper2(path,x,y+1,length);
@@ -77,7 +77,7 @@ public class Solution {
 
 	public static void main(String[] args) {
 		
-		//		a normal mase, 1 means a valid grid where the rat can go..0 means dead end..
+		//		a normal maze, 1 means a valid grid where the rat can go..0 means dead end..
 		int path[][] =  {       { 1, 0, 0, 0 }, 
 			                { 1, 1, 0, 1 }, 
 			                { 0, 0, 0, 1 }, 
