@@ -3,8 +3,12 @@ package com.tcs;
 import java.util.Arrays;
 
 /**
-The knight is placed on the first block of an empty board and, moving according to the rules of chess, must visit each square exactly once.
-Chess is represented by an 8*8 grid. Knight will be initially placed at [0][0] position and filled with value 0(meaning this is the 0th move).
+
+DESCRIPTION: 
+
+The knight is placed on the first block of an empty chess board and, moving according to the rules of chess, must visit each square exactly once.
+Chess is represented by an 8*8 2D grid. Knight will be initially placed at [0][0] position and filled with value 0(meaning this is the 0th move).
+Then will have to fill all the values in the grid with their move number and return it.
 **/
 
 public class Solution {
