@@ -6,7 +6,7 @@ can be structured in an IDE and then run(provided env variables & paths are set 
 
 You can find the problem description in the comment section of the source code file at the very beginning .
 
-The following problems are contained with the source code : 
+The repository contains the following problems : 
 
 1) Knight Tour Problem.
 2) Rat in a maze.
@@ -14,4 +14,4 @@ The following problems are contained with the source code :
   ..........
   
   
-  + more are to be added.
+  ...and more are to be added.
