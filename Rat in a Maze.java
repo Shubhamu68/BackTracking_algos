@@ -1,7 +1,13 @@
 package com.tcs;
 
+/**
+A Maze is given as N*N binary matrix of blocks where source block is the upper left most block i.e., maze[0][0] and destination block is lower rightmost block 
+i.e., maze[N-1][N-1]. A rat starts from source and has to reach the destination. The rat can move only in two directions: forward and down.
+In the maze matrix, 0 means the block is a dead end and 1 means the block can be used in the path from source to destination.
+**/
 public class Solution {
-
+	
+	//   this 2D arr will capture the path..
 	int res[][];
 	public int[][] findPath(int[][] path){
 		
@@ -40,6 +46,13 @@ public class Solution {
 		return false;
 	}
 
+	
+	//	this is just a normal DFS solution which checks whether a path exists..
+	/**
+		The difference between finding the path leading to solution and checking if the path exists or not is using the 2 approaches -
+		Backtracking and DFS .. With backtracking, we will find the actual path... but we if just want to check if there is any such 
+		path, we can use normal DFS as shown below..
+	**/
 	public boolean checkIfPathExists(int[][] path) {
 		
 		boolean res = helper2(path,0,0,path.length);
@@ -56,20 +69,24 @@ public class Solution {
 		if(x == length-1 && y == length-1 && path[x][y] == 1)
 			return true;
 		
-		//		if none of the above, that means we are sitting somewhere in the mase and we can go to 2 different directions... return if any of those 2 paths result in a 
+		//		if none of the above, that means we are sitting somewhere in the mase and we can go to 2 different directions... return if 
+		//		any of those 2 paths result in a 
 		//		solution..
 		return helper2(path,x+1,y,length) || helper2(path,x,y+1,length);
 	}
 
 	public static void main(String[] args) {
-	
-		int path[][] =  {   { 1, 0, 0, 0 }, 
+		
+		//		a normal mase, 1 means a valid grid where the rat can go..0 means dead end..
+		int path[][] =  {       { 1, 0, 0, 0 }, 
 			                { 1, 1, 0, 1 }, 
 			                { 0, 0, 0, 1 }, 
 			                { 0, 0, 0, 1 } };
-		
+		//	to check for exitense of path..
 		System.out.println(new Solution().checkIfPathExists(path));
-		//		new Solution().printPath(res);
+		
+		//	uncomment this to check and print  the actual path itself.. 
+		//	new Solution().printPath(res);
 	}
 
 	private void printPath(int[][] r) {
