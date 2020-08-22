@@ -47,7 +47,8 @@ public class Solution {
 	}
 
 	
-	//	this is just a normal DFS solution which checks whether a path exists..
+	//	below is just a normal DFS solution which checks whether a path exists..it has nothing to do with our original backtracking algo..
+	//	it is just a simple DFS...you can skip the next 2 functions... 
 	/**
 		The difference between finding the path leading to solution and checking if the path exists or not is using the 2 approaches -
 		Backtracking and DFS .. With backtracking, we will find the actual path... but we if just want to check if there is any such 
@@ -88,7 +89,8 @@ public class Solution {
 		//	uncomment this to check and print  the actual path itself.. 
 		//	new Solution().printPath(res);
 	}
-
+	
+	//		printing the path
 	private void printPath(int[][] r) {
 		
 		for(int i =0;i<r.length;i++) {
