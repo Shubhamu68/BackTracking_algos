@@ -11,7 +11,4 @@ The repository contains the following problems :
 1) Knight Tour Problem.
 2) Rat in a maze.
 3) N-Queens Problem.
-  ..........
-  
-  
-  ...and more are to be added.
+4) M-Coloring Problem.
