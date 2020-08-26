@@ -12,3 +12,4 @@ The repository contains the following problems :
 2) Rat in a maze.
 3) N-Queens Problem.
 4) M-Coloring Problem.
+5) Hamiltonian Path.
