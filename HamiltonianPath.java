@@ -10,7 +10,15 @@ import java.util.List;
  * A Hamiltonian cycle (or Hamiltonian circuit) is a Hamiltonian Path such that there is an edge (in the graph) from the 
  * last vertex to the first vertex of the Hamiltonian Path. Determine whether a given graph contains Hamiltonian Cycle or not. 
  * If it contains, then print the path. 
- * 
+ * Eg: 
+ (0)--(1)--(2)
+ |   / \   |
+ |  /   \  | 
+ | /     \ |
+(3)-------(4)
+
+Hamiltonian Cycle in this graph is {0, 1, 2, 4, 3, 0}.
+
  * *********************************************
  * 
  * This is a backtracking problem. Why ? We need to track the path which represents a hamiltonian cycle.
